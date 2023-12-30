@@ -43,15 +43,15 @@ I simply wanted to create something with Python and I felt that creating a simpl
 
 A single Python file named 'Jumper_Final.py' contains all the code I have written. I have created a folder named 'graphics' to store all the images, a folder named 'audio' for all the audio files and a folder named 'fonts' for different fonts (though I ultimately only used one font).
 
-Within the Python file, we can see two sprite classes - one for the player, and one for the obstacles and some functions.
-
 ### Classes
-1. Player class for the player: We constantly check for keyboard inputs, update the gravity value (to imitate gravity), check if the player is walking or jumping to alter the animation (by simply changing the image of the surface used for the player) and update the coordinates of the player.
+Within the Python file, we can see two sprite classes - one for the player, and one for the obstacles:
+1. Player class for the player: I constantly check for keyboard inputs, update the gravity value (to imitate gravity), check if the player is walking or jumping to alter the animation (by simply changing the image of the surface used for the player) and update the coordinates of the player.
 
-2. Obstacle class for the obstacles: We first create 4 default regular platforms at the start of the game, before creating platforms of random types. We also update the position of the platforms (making them move downwards every frame so that the screen appears to be moving down as well as the sideways motion for the ice platforms). An obstacle is also designed to destroy itself (the object is removed from the class) when it falls a certain level below the screen.
+2. Obstacle class for the obstacles: I first create 4 default regular platforms at the start of the game, before creating platforms of random types. We also update the position of the platforms (making them move downwards every frame so that the screen appears to be moving down as well as the sideways motion for the ice platforms). An obstacle is also designed to destroy itself (the object is removed from the class) when it falls a certain level below the screen.
 
 ### Functions
-There are 2 main functions.
+There are 2 main functions - one to check for collisions between the player and the obstacles, and one to constantly update the score. Usually, the collisions are when rectangles of surfaces (essentially a rectangle bordering the player/platform) overlap.
+1. collision_sprite() constantly checks for any collisions between the player and the obstacles. If the player collides with an obstacle, if the obstacle if lava, the player dies immediately. Else, the player will not die but we have to consider if the player will stand on the platform or get blocked by the right, left, or bottom sides of the platforms. For this, I used the rect.clipline() method that takes in two coordinates. Essentially, I drew lines on the 4 sides of the platform and checked which sides of the rectangle of the player, the collisions with the lines occur. That will help me decide if the player successfully stands on a platform or gets blocked by it.
 
 
 
