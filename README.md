@@ -39,7 +39,23 @@ Some other features of the game:
 ## Implementation
 Credits to Kenney at www.kenney.nl for providing free open-source graphics that I used in this game.
 
-I simply wanted to create something with Python and I felt that creating a simple game would allow me to familiarise myself with the language especially the use of classes. Thus, I started working on this with the Pygame library after watching an online tutorial on how to effectively use that library in the creation of 2D games.
+I simply wanted to create something with Python and I felt that creating a simple game would allow me to familiarise myself with the language especially the use of classes. Thus, I started working on this with the Pygame library after watching an online tutorial on how to effectively use that library in the creation of 2D games. It took me about a week to learn the basics of video game creation and to finish implementing my game.
+
+A single Python file named 'Jumper_Final.py' contains all the code I have written. I have created a folder named 'graphics' to store all the images, a folder named 'audio' for all the audio files and a folder named 'fonts' for different fonts (though I ultimately only used one font).
+
+Within the Python file, we can see two sprite classes - one for the player, and one for the obstacles and some functions.
+
+### Classes
+1. Player class for the player: We constantly check for keyboard inputs, update the gravity value (to imitate gravity), check if the player is walking or jumping to alter the animation (by simply changing the image of the surface used for the player) and update the coordinates of the player.
+
+2. Obstacle class for the obstacles: We first create 4 default regular platforms at the start of the game, before creating platforms of random types. We also update the position of the platforms (making them move downwards every frame so that the screen appears to be moving down as well as the sideways motion for the ice platforms). An obstacle is also designed to destroy itself (the object is removed from the class) when it falls a certain level below the screen.
+
+### Functions
+There are 2 main functions.
+
+
+
+
 
 
 
