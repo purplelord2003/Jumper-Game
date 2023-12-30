@@ -35,3 +35,13 @@ Some other features of the game:
 6. There is background music when the actual game starts, that changes to a different song with a higher tempo when the difficulty of the game increases in the first two instances. After which, the same song will be played on repeat until the player dies.
 7. The ice platform is defaulted to move right at first, once it reaches the right edge of the screen, it will move left, then when it reaches the left edge of the screen, it will move right and so on.
 8. The obstacles that fall below the display screen will eventually be deleted to ensure that not too many obstacles are present as the game progresses to ensure a decent frame rate.
+
+## Implementation
+Credits to Kenney at www.kenney.nl for providing free open-source graphics that I used in this game.
+
+I simply wanted to create something with Python and I felt that creating a simple game would allow me to familiarise myself with the language especially the use of classes. Thus, I started working on this with the Pygame library after watching an online tutorial on how to effectively use that library in the creation of 2D games.
+
+
+
+
+
