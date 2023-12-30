@@ -29,7 +29,9 @@ Throughout the game, the player and the platforms are coded to move down a certa
 Some other features of the game:
 1. The player will first spawn on a ground.
 2. The player will engage in a jumping animation whenever he jumps, with a sound effect as well!
-3. The player will engage in a walking animation whenever he is walking such as on the ground or ice/regular platform
-4. There is an intro music that is played at the intro page and the results page.
-5. There is background music when the actual game starts, that changes to a different song with a higher tempo when the difficulty of the game increases in the first two instances. After which, the same song will be played on repeat until the player dies.
-6. 
+3. Gravity is being imitated in the sense that the player will rise as he jumps, and reach a highest point before falling back down.
+4. The player will engage in a walking animation whenever he is walking such as on the ground or ice/regular platform
+5. There is an intro music that is played at the intro page and the results page.
+6. There is background music when the actual game starts, that changes to a different song with a higher tempo when the difficulty of the game increases in the first two instances. After which, the same song will be played on repeat until the player dies.
+7. The ice platform is defaulted to move right at first, once it reaches the right edge of the screen, it will move left, then when it reaches the left edge of the screen, it will move right and so on.
+8. The obstacles that fall below the display screen will eventually be deleted to ensure that not too many obstacles are present as the game progresses to ensure a decent frame rate.
