@@ -15,8 +15,8 @@ There are a few keyboard inputs for the player to control his character:
 There are 3 types of obstacles(platforms) for the player to navigate through as he jumps upwards: regular platforms, lava platforms and ice platforms.
 
 1. Regular platforms: These are safe platforms for the player to stand on and the platforms are stationary.
-2. Lava platforms: These platforms are lethal for the player and the player will die instantly if he comes into contact with them. A lava platform will be accompanied by a regular platform placed adjacent to it so the player has to choose the correct platform to jump onto.
-3. Ice platform: These are safe platforms for the player but they move from side to side. The player will also move along with an ice platform if he is standing on it.
+2. Ice platform: These are safe platforms for the player but they move from side to side. The player will also move along with an ice platform if he is standing on it.
+3. Lava platforms: These platforms are lethal for the player and the player will die instantly if he comes into contact with them. A lava platform will be accompanied by a regular platform placed adjacent to it and an ice platform placed slightly below the lava platform (that moves to the right/left) so the player can jump onto the ice platform to go to either side of the screen to then jump onto the regular platform to survive.
 
 Do take note that the player will be 'blocked' if he collides with the underneath or sides of the platform. Therefore, he has to maneuver around the platform and land on it to successfully stand on it.
 
@@ -51,7 +51,10 @@ Within the Python file, we can see two sprite classes - one for the player, and 
 
 ### Functions
 There are 2 main functions - one to check for collisions between the player and the obstacles, and one to constantly update the score. Usually, the collisions are when rectangles of surfaces (essentially a rectangle bordering the player/platform) overlap.
-1. collision_sprite() constantly checks for any collisions between the player and the obstacles. If the player collides with an obstacle, if the obstacle if lava, the player dies immediately. Else, the player will not die but we have to consider if the player will stand on the platform or get blocked by the right, left, or bottom sides of the platforms. For this, I used the rect.clipline() method that takes in two coordinates. Essentially, I drew lines on the 4 sides of the platform and checked which sides of the rectangle of the player, the collisions with the lines occur. That will help me decide if the player successfully stands on a platform or gets blocked by it.
+
+1. collision_sprite() constantly checks for any collisions between the player and the obstacles. If the player collides with an obstacle, if the obstacle if lava, the player dies immediately. Otherwise, the player will not die but we have to consider if the player will stand on the platform or get blocked by the right, left, or bottom sides of the platforms. For this, I used the rect.clipline() method that takes in two coordinates. Essentially, I drew lines on the 4 sides of the platform and checked which sides of the rectangle of the player, the collisions with the lines occur. That will help me decide if the player successfully stands on a platform or gets blocked by it.
+  
+2. display_score(max_score) takes in the max_score variable that is set to 0 when the game is initialised and set to 0.1 when the actual game starts. Thus, if max_score > 0 when the game_state is False means that I need to show the player the results page. If max_score is equal to 0 when the game_state is False means I need to show the player the intro page. The main purpose of the max_score however, is to constantly check the y-position of the player to constantly update the max_score if (y-position of the player / 100) is greater than the max_score (meaning the player has successfully reached a new highest height). This max_score will be truncated to an int and displayed in terms of meters. The max_score is cast onto the screen on the top-left when the game is being played and also when the player has died and reached the results page.
 
 
 
