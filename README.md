@@ -39,7 +39,7 @@ Some other features of the game:
 ## Implementation
 Credits to Kenney at www.kenney.nl for providing free open-source graphics that I used in this game.
 
-I simply wanted to create something with Python and I felt that creating a simple game would allow me to familiarise myself with the language especially the use of classes. Thus, I started working on this with the Pygame library after watching an online tutorial on how to effectively use that library in the creation of 2D games. It took me about a week to learn the basics of video game creation and to finish implementing my game.
+I simply wanted to create something with Python and I felt that creating a simple game would allow me to familiarise myself with the language especially the use of classes. Thus, I started working on this with the Pygame library after watching an online tutorial on how to effectively use that library in the creation of 2D games.
 
 A single Python file named 'Jumper_Final.py' contains all the code I have written. I have created a folder named 'graphics' to store all the images, a folder named 'audio' for all the audio files and a folder named 'fonts' for different fonts (though I ultimately only used one font).
 
@@ -56,11 +56,5 @@ There are 2 main functions - one to check for collisions between the player and 
   
 2. display_score(max_score) takes in the max_score variable that is set to 0 when the game is initialised and set to 0.1 when the actual game starts. Thus, if max_score > 0 when the game_state is False means that I need to show the player the results page. If max_score is equal to 0 when the game_state is False means I need to show the player the intro page. The main purpose of the max_score however, is to constantly check the y-position of the player to constantly update the max_score if (y-position of the player / 100) is greater than the max_score (meaning the player has successfully reached a new highest height). This max_score will be truncated to an int and displayed in terms of meters. The max_score is cast onto the screen on the top-left when the game is being played and also when the player has died and reached the results page.
 
-
-
-
-
-
-
-
-
+## Conclusion
+Ultimately, this entire project took me about a week to learn the basics of video game creation and to finish implementing my game. I would definitely say that this was a good opportunity for me to practice Python programming while creating something fun.
