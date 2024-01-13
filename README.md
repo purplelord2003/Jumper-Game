@@ -2,6 +2,10 @@
 #### Video Demo:  https://www.youtube.com/watch?v=pTeQceHpiQ0
 #### Description: This simple game is created using Python with the Pygame library.
 
+## How to play
+Import the entire Python folder into your text editor such as VSCode and install the Pygame library.
+Here is a link to check if you have installed the Pygame library successfully: https://www.pygame.org/wiki/GettingStarted
+
 ## Objective
 The objective of the game is simple. The player has to jump onto various platforms to reach as high as he can without falling off the screen or dying to an obstacle. The score achieved by the player is the highest height (in meters) achieved by the player before dying. Therefore, the player has to aim to jump as high as possible to achieve a high score.
 
