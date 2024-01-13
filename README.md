@@ -5,7 +5,7 @@
 ## How to play
 Import the entire Python folder into your text editor such as VSCode and install the Pygame library.
 Here is a link to check if you have installed the Pygame library successfully: https://www.pygame.org/wiki/GettingStarted
-Once done, run the python program to start the game.
+Once done, run the Python program to start the game.
 
 ## Objective
 The objective of the game is simple. The player has to jump onto various platforms to reach as high as he can without falling off the screen or dying to an obstacle. The score achieved by the player is the highest height (in meters) achieved by the player before dying. Therefore, the player has to aim to jump as high as possible to achieve a high score.
