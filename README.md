@@ -5,6 +5,7 @@
 ## How to play
 Import the entire Python folder into your text editor such as VSCode and install the Pygame library.
 Here is a link to check if you have installed the Pygame library successfully: https://www.pygame.org/wiki/GettingStarted
+
 Once done, run the Python program to start the game.
 
 ## Objective
